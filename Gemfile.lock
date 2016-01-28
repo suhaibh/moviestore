@@ -66,6 +66,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hiredis (0.4.5)
     i18n (0.7.0)
     jbuilder (2.4.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -119,6 +120,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.1)
+    redis (3.0.7)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
     sass (3.4.20)
@@ -167,10 +169,12 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   foundation-rails
+  hiredis (~> 0.4.5)
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
   rails (= 4.2.0)
+  redis (~> 3.0.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   turbolinks
