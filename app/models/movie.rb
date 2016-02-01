@@ -13,7 +13,7 @@ class Movie < ActiveRecord::Base
 		if $redis.sismember "cart#{current_user_id}", id
 			"Remove from"
 		else
-			"Add To"
+			"Add to"
 		end
 	end
 end
