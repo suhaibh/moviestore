@@ -19,4 +19,9 @@ class User < ActiveRecord::Base
   	total_price
   end
 
+  def get_cart_movies
+  	cart_ids = $redis.smembers "cart#{id}"
+  	Movie.find(cart_ids)
+  end
+
 end
