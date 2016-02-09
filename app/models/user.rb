@@ -12,4 +12,11 @@ class User < ActiveRecord::Base
   def cart_count
   	$redis.scard "cart#{id}"
   end
+
+  def cart_total_price
+  	total_price = 0
+  	get_cart_movies.each {|movie| total_price += movie.price}
+  	total_price
+  end
+
 end
